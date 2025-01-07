@@ -1,18 +1,19 @@
 
+// implement a greedy algorithm to 
 const Scheduler = ({
     ListOfTasks = []
 }) => {
-    // Check whether list
+    
     return (
-        <div className="bg-black w-1/2 p-3 space-y-2 mx-auto">
+        <div className="bg-black text-white w-1/2 p-3 space-y-2 mx-auto">
             {/* Iterate through ListOfTasks and render it*/}
-            { ListOfTasks? ListOfTasks.map((item, index) => {
+            { ListOfTasks?.length > 0? ListOfTasks.map((item, index) => {
                 return (<div 
                 key={`${index}-${item}`}
-                className="bg-blue-400 text-white">
+                className="bg-blue-400">
                     {item.name? item.name.toUpperCase(): 'UNKNOWN NAME'}
-                </div>)
-            }) : <div>list empty</div> }
+                </div>)}) 
+                : <div>tasks empty</div> }
         </div>
     )
 }

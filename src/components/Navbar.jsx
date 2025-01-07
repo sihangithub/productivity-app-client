@@ -5,8 +5,12 @@ const Navbar = () => {
         <nav className="bg-black w-full">
            
                 <ul className="flex space-x-4 text-white px-4 py-2">
-                    <li>page 1</li>
-                    <li>page 2</li>
+                    <li>
+                        <a href="/login">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="/">MAIN</a>
+                    </li>
                     <li>page 3</li>
                 </ul>
            

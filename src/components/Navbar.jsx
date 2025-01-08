@@ -11,7 +11,9 @@ const Navbar = () => {
                     <li>
                         <a href="/">MAIN</a>
                     </li>
-                    <li>page 3</li>
+                    <li>
+                        <a href="/finance">FINANCE</a>
+                    </li>
                 </ul>
            
         </nav>
